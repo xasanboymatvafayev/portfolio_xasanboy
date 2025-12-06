@@ -17,7 +17,7 @@
            
     <script src="https://kit.fontawesome.com/95a2002ecf.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/xasanboy.jpg" type="image/x-png">
+    <link id='favicon' rel="shortcut icon" href="xasanboy.jpg" type="image/x-png">
     <title>Portfolio | Xasanboy</title>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
@@ -1707,7 +1707,7 @@
             </div>
         </div>
         <div class="image">
-            <img draggable="false" class="tilt" src="./assets/images/xasanboy.jpg" alt="" height="">
+            <img draggable="false" class="tilt" src="xasanboy.jpg" alt="" height="">
         </div>
     </section>
     <!-- hero section ends -->
@@ -1720,7 +1720,7 @@
         <div class="row">
 
             <div class="image">
-                <img draggable="false" class="tilt" src="./assets/images/profile1.png" alt="">
+                <img draggable="false" class="tilt" src="profile1.png" alt="">
             </div>
             <div class="content">
                 <h3>I'm Xasanboy</h3>
@@ -1763,7 +1763,7 @@
 
                 <div class="bar">
                     <div class="info">
-                        <img src="./assets/images/skills/TailwindCSS.png" />
+                        <img src="TailwindCSS.png" />
                         <span>TailwindCSS</span>
                     </div>
                 </div>
@@ -1800,32 +1800,32 @@
                 </div>
                 <div class="bar">
                     <div class="info">
-                        <img src="./assets/images/skills/javascript.png" height="50" width="50">
+                        <img src="javascript.png" height="50" width="50">
                         <span>JavaScript</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="info">
-                        <img src="./assets/images/skills/bootstrap.png" height="50" width="50">
+                        <img src="bootstrap.png" height="50" width="50">
                         <span>Bootstrap</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="info">
-                        <img src="./assets/images/skills/python.png" height="50" width="50">
+                        <img src="python.png" height="50" width="50">
                         <span>Python</span>
                     </div>
                 </div>
                 <div class="bar">
                     <div class="info">
-                        <img src="./assets/images/skills/github.png" height="50" width="50">
+                        <img src="github.png" height="50" width="50">
                         <span>GitHub</span>
                     </div>
                 </div>
 
                 <div class="bar">
                     <div class="info">
-                        <img src="./assets/images/skills/css.png" height="50" width="50">
+                        <img src="css.png" height="50" width="50">
                         <span>CSS</span>
                     </div>
                 </div>
@@ -1846,7 +1846,7 @@
         <div class="box-container  bg-warning">
 
             <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/portfolioo.png" alt="" />
+                <img draggable="false" src="portfolioo.png" alt="" />
                 <div class="content">
                     <div class="tag">
                         <h3>Portfolio Website</h3>
@@ -1855,7 +1855,7 @@
                         <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here
                             only!</p>
                         <div class="btns">
-                            <a href="https:xasanboy-matvafayev.netlify.app" class="btn" target="_blank"><i
+                            <a href="https:xasanboy_matvafayev.netlify.app" class="btn" target="_blank"><i
                                     class="fas fa-eye"></i> View</a>
                             <a href="https://github.com/xasanboymatvafayev/portfolio_xasanboy/blob/main/index.html"
                                 class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
@@ -1864,7 +1864,7 @@
                 </div>
             </div>
             <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/particle-text.png" alt="" />
+                <img draggable="false" src="particle-text.png" alt="" />
                 <div class="content">
                     <div class="tag">
                         <h3>AICMA Bhadohi</h3>
@@ -1882,7 +1882,7 @@
                 </div>
             </div>
             <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/snake.io.png" alt="" />
+                <img draggable="false" src="snake.io.png" alt="" />
                 <div class="content">
                     <div class="tag">
                         <h3>Modern Tek</h3>
@@ -2225,7 +2225,7 @@
             type === "skills" ?
                 response = await fetch("skills.json")
                 :
-                response = await fetch("./projects/projects.json")
+                response = await fetch("./projects.json")
             const data = await response.json();
             return data;
         }
@@ -2251,7 +2251,7 @@
             projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
                 projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="/assets/images/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -2393,6 +2393,5 @@
     </script>
 
 </body>
-
 
 </html>
